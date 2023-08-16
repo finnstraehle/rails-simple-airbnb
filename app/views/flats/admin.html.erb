@@ -1,0 +1,21 @@
+<div class="header">
+  <h1>Admin</h1>
+  <%= link_to "< back", flats_path, class: "back-button"%>
+</div>
+
+<div class="container-admin">
+  <div style="text-align: center; margin-bottom: 20px;"><%= link_to "+ new flat", admin_flats_path, class: "add-button"%></div>
+  <% @flats.each do |flat| %>
+    <div class="card-admin">
+      <img src="<%= flat.img %>" class="avatar-large" />
+      <div class="card-admin-content">
+        <p><small><%= flat.name %></small></p>
+        <p><%= flat.address %></p>
+      </div>
+      <div class="card-admin-actions">
+        <%= link_to "Edit", edit_flat_path(flat) %>
+        <%= link_to "Delete", flat_path(flat), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}  %>
+      </div>
+    </div>
+  <% end %>
+</div>

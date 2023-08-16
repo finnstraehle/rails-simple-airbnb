@@ -1,0 +1,81 @@
+.header {
+  position: relative;
+}
+
+.admin-button {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  text-decoration: none;
+  background-color: rgba(52, 20, 20, 0.69);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.admin-button:hover {
+  background-color: rgba(52, 20, 20, 1);
+  color: white;
+}
+
+.grid-index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-index {
+  width: 400px;
+  margin: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-index > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-index h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-index p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-index .card-index-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-index .card-index-infos p {
+  font-size: 14px;
+}
+
+.card-index-infos .card-index-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+.flat-name {
+  text-decoration: none;
+  color: rgba(52, 20, 20, 0.69);
+}
+
+.flat-name:hover {
+  color: rgba(52, 20, 20, 1);
+}

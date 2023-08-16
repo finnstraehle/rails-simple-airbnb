@@ -1,0 +1,74 @@
+.header {
+  position: relative;
+}
+
+.add-button {
+  text-decoration: none;
+  background-color: rgba(52, 20, 20, 0.69);
+  color: white;
+  padding: 5px 70px;
+  border-radius: 15px;
+}
+
+.add-button:hover {
+  background-color: rgba(52, 20, 20, 1);
+  color: white;
+}
+
+.container-admin {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.avatar-large {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.card-admin {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  background: white;
+  padding: 8px 16px;
+  border: 2px solid rgb(235,235,235);
+  border-radius: 10px;
+}
+
+.card-admin .card-admin-content {
+  flex-grow: 1;
+  padding: 0 24px;
+}
+
+.card-admin p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.card-admin small {
+  color: rgba(52, 20, 20, 0.69);
+  font-weight: bold;
+  font-size: 20px;
+}
+.card-admin .card-admin-actions {
+  opacity: 0;
+  display: flex;
+  transition: ease .3s;
+}
+
+.card-admin:hover .card-admin-actions {
+  opacity: 1;
+}
+
+.card-admin .card-admin-actions a {
+  color: rgba(52, 20, 20, 0.69);
+  margin-left: 16px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.card-admin .card-admin-actions a:hover {
+  color: rgba(52, 20, 20, 1);
+}

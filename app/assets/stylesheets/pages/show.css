@@ -1,0 +1,34 @@
+.banner-show {
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.card-show {
+  position: absolute;
+  top: 300px;
+  left: calc(50vw - (350px));
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 700px;
+  padding: 0 20px 40px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.card-show h1 {
+  color: rgba(52, 20, 20, 0.69);
+  margin: 0;
+}

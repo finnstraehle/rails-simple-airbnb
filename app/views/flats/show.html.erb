@@ -1,0 +1,12 @@
+<div class="banner-show" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @flat.img %>)"></div>
+<%= link_to "< back", flats_path, class: "back-button"%>
+<div class="card-show">
+  <div class="card-show-infos">
+    <div>
+      <h1><%= @flat.name %></h1>
+      <p><%= @flat.address %></p>
+      <p><%= @flat.description %></p>
+    </div>
+    <h2 class="card-trip-pricing"><%= "#{@flat.price_per_night}$ / night" %></h2>
+  </div>
+</div>
