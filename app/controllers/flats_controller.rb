@@ -7,10 +7,6 @@ class FlatsController < ApplicationController
     @flat = Flat.find(params[:id])
   end
 
-  def admin
-    @flats = Flat.all
-  end
-
   def new
     @flats = Flat.new
   end
@@ -34,7 +30,7 @@ class FlatsController < ApplicationController
   def destroy
     @flats = Flat.find(params[:id])
     @flats.destroy
-    redirect_to admin_flats_path
+    redirect_to admin_path
   end
 
   private

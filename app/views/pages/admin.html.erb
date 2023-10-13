@@ -4,7 +4,7 @@
 </div>
 
 <div class="container-admin">
-  <div style="text-align: center; margin-bottom: 20px;"><%= link_to "+ new flat", admin_flats_path, class: "add-button"%></div>
+  <div style="text-align: center; margin-bottom: 20px;"><%= link_to "+ new flat", admin_path, class: "add-button"%></div>
   <% @flats.each do |flat| %>
     <div class="card-admin">
       <img src="<%= flat.img %>" class="avatar-large" />
